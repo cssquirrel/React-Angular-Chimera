@@ -73,47 +73,54 @@
 "use strict";
 
 
+var _Boilerplate = __webpack_require__(1);
+
+var _Boilerplate2 = _interopRequireDefault(_Boilerplate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+angular.module('umbraco').controller("ngImport.Boilerplate.Controller", _Boilerplate2.default);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// Before
+var Boilerplate = function () {
+    function Boilerplate(contentResource) {
+        _classCallCheck(this, Boilerplate);
 
-/*angular.module("umbraco").controller("ngImport.Boilerplate.Controller", function ($scope) {
-
-
-    $scope.init = function() {
-        console.info("Hello, world!");
-    };
-
-    $scope.init();
-
-});*/
-
-// After
-
-var BoilerplateController = function () {
-    function BoilerplateController() {
-        _classCallCheck(this, BoilerplateController);
+        this.contentResource = contentResource;
 
         this.init = this.init.bind(this);
 
         this.init();
     }
 
-    _createClass(BoilerplateController, [{
+    _createClass(Boilerplate, [{
         key: "init",
         value: function init() {
-            console.info("Hello, world! This is new text.");
+            console.info("Hello, world! Boilerplate time. I'm going to try to use contentResource");
+            this.contentResource.getById(1103).then(function (data) {
+                console.info(data);
+            });
         }
     }]);
 
-    return BoilerplateController;
+    return Boilerplate;
 }();
 
 ;
 
-angular.module('umbraco').controller("ngImport.Boilerplate.Controller", BoilerplateController);
+Boilerplate.$inject = ['contentResource'];
+
+module.exports = Boilerplate;
 
 /***/ })
 /******/ ]);
