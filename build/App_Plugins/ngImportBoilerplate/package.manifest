@@ -3,7 +3,7 @@
         name: "ngImport Boilerplate",
         alias: "ngImportBoilerplate.Editor",
         icon: "icon-newspaper",
-        group: "Rich Content",
+        group: "media",
         editor: {
             view: "~/app_plugins/ngImportBoilerplate/views/container.html",
             valueType: "JSON"

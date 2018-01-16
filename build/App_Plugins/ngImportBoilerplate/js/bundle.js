@@ -1,6 +1,4 @@
-// Before
-
-angular.module("umbraco").controller("ngImport.Boilerplate.Controller", function ($scope) {
+angular.module("umbraco").controller("ngImport.Boilerplate.Controller", function ($scope, $http) {
 
 
     $scope.init = function() {
