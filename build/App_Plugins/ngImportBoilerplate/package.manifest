@@ -1,0 +1,18 @@
+{
+    propertyEditors: [{
+        name: "ngImport Boilerplate",
+        alias: "ngImportBoilerplate.Editor",
+        icon: "icon-newspaper",
+        group: "Rich Content",
+        editor: {
+            view: "~/app_plugins/ngImportBoilerplate/views/container.html",
+            valueType: "JSON"
+        }
+    }],
+    javascript: [
+        "~/app_plugins/ngImportBoilerplate/js/bundle.js"
+    ],
+    css: [
+        "~/app_plugins/ngImportBoilerplate/css/styles.css"
+    ]
+}
