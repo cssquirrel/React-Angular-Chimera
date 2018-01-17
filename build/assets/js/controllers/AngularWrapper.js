@@ -8,7 +8,7 @@ import ReactLogic from '../components/ReactLogic/ReactLogic';
  * @description An Angular controller that serves as a simple wrapper to a React
  * app for the purposes of binding the Umbraco Backoffice to non-Angular code.
  */
-const AngularWrapper = function($scope, contentResource, $element) {
+const AngularWrapper = function($scope, $element) {
 
     // Helper functions ////////////////////////////////////////////////////////
 
@@ -66,6 +66,6 @@ const AngularWrapper = function($scope, contentResource, $element) {
 };
 
 // We must inject these into AngularWrapper to properly DI the controller.
-AngularWrapper.$inject = ['$scope', 'contentResource', '$element'];
+AngularWrapper.$inject = ['$scope', '$element'];
 
 module.exports = AngularWrapper;

@@ -962,7 +962,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @description An Angular controller that serves as a simple wrapper to a React
  * app for the purposes of binding the Umbraco Backoffice to non-Angular code.
  */
-var AngularWrapper = function AngularWrapper($scope, contentResource, $element) {
+var AngularWrapper = function AngularWrapper($scope, $element) {
 
     // Helper functions ////////////////////////////////////////////////////////
 
@@ -1020,7 +1020,7 @@ var AngularWrapper = function AngularWrapper($scope, contentResource, $element) 
 };
 
 // We must inject these into AngularWrapper to properly DI the controller.
-AngularWrapper.$inject = ['$scope', 'contentResource', '$element'];
+AngularWrapper.$inject = ['$scope', '$element'];
 
 module.exports = AngularWrapper;
 
