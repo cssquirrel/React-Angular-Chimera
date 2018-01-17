@@ -1,9 +1,9 @@
 var path = require('path');
 
 module.exports = {
-    entry: './App_Plugins/ngImportBoilerplate/js/app.js',
+    entry: './assets/js/app.js',
     output: {
-        filename: './App_Plugins/ngImportBoilerplate/js/bundle.js'
+        filename: './dist/ReactAngularChimera/js/bundle.js'
     },
     module: {
         loaders: [

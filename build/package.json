@@ -1,5 +1,5 @@
 {
-    "name": "ngImportBoilerplate",
+    "name": "ReactAngularChimera",
     "version": "1.0.0",
     "scripts": {
         "webpack": "webpack -w --config webpack.config.js"
@@ -13,7 +13,6 @@
         "babel-preset-react": "^6.23.0",
         "babel-preset-stage-2": "^6.24.1",
         "jsx-loader": "^0.13.2",
-        "react-test-renderer": "^16.0.0",
         "webpack": "^2.5.1"
     },
     "dependencies": {

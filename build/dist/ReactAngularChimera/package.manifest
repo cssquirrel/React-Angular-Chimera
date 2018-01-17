@@ -1,0 +1,18 @@
+{
+    propertyEditors: [{
+        name: "React in Angular Chimera",
+        alias: "ReactAngularChimera.Editor",
+        icon: "icon-newspaper",
+        group: "media",
+        editor: {
+            view: "~/app_plugins/ReactAngularChimera/views/container.html",
+            valueType: "JSON"
+        }
+    }],
+    javascript: [
+        "~/app_plugins/ReactAngularChimera/js/bundle.js"
+    ],
+    css: [
+        "~/app_plugins/ReactAngularChimera/css/styles.css"
+    ]
+}

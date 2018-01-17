@@ -1,3 +1,3 @@
-# ngImport Package Boilerplate  &middot; ![version](https://img.shields.io/badge/version-1.0.0.rc1-yellow.svg)
+# React Angular Chimera &middot; ![version](https://img.shields.io/badge/version-1.0.0.rc1-yellow.svg)
 
-Starter code for making a back office package using ngImport
+An example and boilerplate for creating an Umbraco property editor that uses React inside an Angular wrapper.
