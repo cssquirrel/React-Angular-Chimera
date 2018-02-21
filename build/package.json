@@ -17,8 +17,6 @@
         "webpack": "^2.5.1"
     },
     "dependencies": {
-        "angular": "^1.6.8",
-        "angular-resource": "^1.6.8",
         "react": "^16.0.0",
         "react-dom": "^16.0.0"
     }

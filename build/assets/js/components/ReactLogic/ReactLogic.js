@@ -10,10 +10,6 @@ import React from 'react';
 class ReactLogic extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {};
-
-        this.onValueChange = this.onValueChange.bind(this);
     }
 
     // React Lifecycle Methods /////////////////////////////////////////////////
@@ -22,7 +18,7 @@ class ReactLogic extends React.Component {
     
     // Event Handlers //////////////////////////////////////////////////////////
 
-    onValueChange (e) {
+    onValueChange = (e) => {
         this.props.onValueChange(e.target.value);
     };    
     
