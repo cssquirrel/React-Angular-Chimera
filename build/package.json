@@ -19,7 +19,6 @@
     "dependencies": {
         "angular": "^1.6.8",
         "angular-resource": "^1.6.8",
-        "ngimport": "^0.8.0",
         "react": "^16.0.0",
         "react-dom": "^16.0.0"
     }

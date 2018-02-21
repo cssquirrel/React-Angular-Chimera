@@ -33,7 +33,7 @@ We need to perform two important tasks to make the React work properly: we need 
 `/build/dist/ReactAngularChimera/views/container.html` looks like this:
 
 ```
-<div class="ngimport-container" ng-controller="ReactAngularChimera.AngularWrapper">
+<div class="chimera-container" ng-controller="ReactAngularChimera.AngularWrapper">
     <div><strong>React in Angular Chimera Example</strong></div>
     <div class="react-mount-node"></div>
     <div>
@@ -90,4 +90,4 @@ Which we pass into our `ReactLogic` component as onValueChange. Inside the compo
 
 This is our React component that we're injecting into the Angular view using the `ReactDOM.render()` inside `AngularWrapper`, and that we're passing `$scope.model.value` to as `props.value`. It is a vanilla React component, with no need for additional changes to behave properly with our Angular wrapper. We can use it in any normal fashion we desire.
 
-There will be some issues if we try to utilize Angular dependencies like `$http`, but we'll be able to inject those with ngimport, and we also need to pass in any Umbraco services or resources into our component via `AngularWrapper` as props if we wish to utilize those, as we can't use ngimport to bring in non built-in Angular dependencies. More on how to do this will exist in a future version of this repo.
+There will be some issues if we try to utilize Angular dependencies like `$http`, but we could inject those with [ngimport](https://github.com/bcherny/ngimport), and we also need to pass in any Umbraco services or resources into our component via `AngularWrapper` as props if we wish to utilize those, as we can't use ngimport to bring in non built-in Angular dependencies. More on how to do this will exist in a future version of this repo.
