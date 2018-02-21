@@ -1,4 +1,4 @@
-# React Angular Chimera &middot; ![version](https://img.shields.io/badge/version-1.0.0.rc1-yellow.svg)
+# React Angular Chimera &middot; ![version](https://img.shields.io/badge/version-1.0.0.rc2-yellow.svg)
 
 >"A thing of immortal make, not human, lion-fronted and snake behind, a goat in the middle."
 

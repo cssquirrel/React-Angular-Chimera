@@ -1,10 +1,14 @@
 var path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './assets/js/app.js',
     output: {
         filename: './dist/ReactAngularChimera/js/bundle.js'
     },
+    plugins: [
+        new UglifyJSPlugin()
+    ],
     module: {
         loaders: [
             {
